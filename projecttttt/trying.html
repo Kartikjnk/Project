@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;
+      background-color: aquamarine;
+      }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Center the image and position the close button */
+.imgcontain {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.contain {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  
+}
+    </style>
+    <div class="imgcontain">
+      <img src="WallpaperDog-17079145.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="contain">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" >
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" >
+        
+      <a href="KARMA.html"><input type="button" value="Sign In" onclick="alert('successfully loged in')"></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="contain" style="background-color:#f1f1f1">
+      <button type="reset">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

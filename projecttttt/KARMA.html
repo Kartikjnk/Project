@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<!--for nav menu-->
+<div class="topnav">
+  <a class="active" href="">Home</a>
+  <a href="#yo">Books</a>
+  <a href="about.html" target="_blank">About</a>
+  <a href="trying.html" target="_blank">Signup</a>
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+<!--for text over image-->
+<section>
+    
+    <div class="container">
+      <img src="lofi.jpg.jpg" alt="Snow" style="width:100%;">
+      <div class="bottom-left">Grab</div>
+      <div class="top-left">Learn</div>
+      <div class="top-right">Understand</div>
+      <div class="bottom-right">Enhance</div>
+      <div class="centered">Skills</div>
+    </div>
+    
+</section>
+<!--for description of books-->
+<section>
+  
+    <p>Different types of books and there meaning:</p>
+    
+    <div id="Fiction" class="tabcontent">
+      <h1>Fiction</h1>
+      <p>Fiction, literature created from the imagination,no relation with reality.
+        Fiction books are written from the authors imagination and contain invented characters and events.
+        Mysteries, science fiction, romance, fantasy, chick lit, crime thrillers are all fiction genres.
+      </p>
+    </div>
+    
+    <div id="Non-Fiction" class="tabcontent">
+      <h1>Non-Fiction</h1>
+      <p>Non-Fiction books are the books that intends, in good faith, to present only truth
+          and accuracy regarding information,events or people.
+      </p> 
+    </div>
+     
+    <div id="Edited" class="tabcontent">
+      <h1>Edited</h1>
+      <p>An edited book is a book with chapters written by different authors. 
+          For the book as a whole one or more editors are responsible. If there is no author, the title of the chapter or entry is placed in the
+           author position. The editors of the book are preceded by the word "In".</p>
+    </div>
+    
+    <div id="Reference" class="tabcontent">
+      <h1>Reference</h1>
+      <p>it elaborates on every concept vividly and clearly.
+        Reference book helps you in enriching your knowledge and deeper your concepts and understanding.
+        Some examples of reference sources are: dictionaries, encyclopedias, bibliographies, almanacs, directories, atlases, and handbooks.
+    </p>
+    </div>
+    
+    <button class="tablink" onclick="openCity('Fiction', this, 'pink')" id="defaultOpen">Fiction</button>
+    <button class="tablink" onclick="openCity('Non-Fiction', this, 'lightgreen')">Non-Fiction</button>
+    <button class="tablink" onclick="openCity('Edited', this, 'skyblue')">Edited</button>
+    <button class="tablink" onclick="openCity('Reference', this, 'yellow')">Reference</button>
+    <script>
+      function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+</section>
+<!--booksgrid-->
+<section>
+  
+    <!-- Header -->
+    <div class="header" id="yo">
+      <h1>Books Image Grid</h1>
+    </div>
+    
+    <!-- Photo Grid -->
+    <div class="rowi"> 
+      <div class="columni">
+    <a href="Hk Malik EngineeringPhysics.pdf"><img src="1643034071472.jpeg" style="width:100%"></a>
+        <img src="bhag.jpg" style="width:100%">
+        <img src="psyco.jpg" style="width:100%">
+        <img src="WallpaperDog-17079145.png" style="width:100%">
+        <img src="hp.jpeg" style="width:100%">
+        <img src="lofi.jpg.jpg" style="width:100%">
+        <img src="img.jpeg" style="width:100%">
+      </div>
+      <div class="columni">
+        <a href="Harry Potter and the Cursed Chi - J.K. Rowling.pdf"><img src="1643034071441.jpeg" style="width:100%"></a>
+        <a href="javaebook.pdf"><img src="1643034071460.png" style="width:100%"></a>
+        <img src="stefan.jpg" style="width:100%">
+        <img src="img.jpeg" style="width:100%">
+        <img src="lofi.jpg.jpg" style="width:100%">
+        <img src="hp.jpeg" style="width:100%">
+        <img src="psyco.jpg" style="width:100%">
+      </div>  
+      <div class="columni">
+        <a href="Its Not Right, but Its Okay by Tiwari Anuj (z-lib.org).epub.pdf"><img src="1643034071452.jpeg" style="width:100%"></a>
+        <img src="scifi.jpeg" style="width:100%">
+        <img src="bhag.jpg" style="width:100%">
+        <img src="stefan.jpg" style="width:100%">
+        <img src="img.jpeg" style="width:100%">
+        <img src="hp.jpeg" style="width:100%">
+        <img src="WallpaperDog-17079145.png" style="width:100%">
+      </div>
+      <div class="columni">
+        <a href="html and css book.pdf"><img src="1643034071466.jpeg" style="width:100%"></a>
+        <img src="1643034071460.png" style="width:100%">
+        <img src="scifi.jpeg" style="width:100%">
+        <img src="bhag.jpg" style="width:100%">
+        <img src="stefan.jpg" style="width:100%">
+        <img src="img.jpeg" style="width:100%">
+      </div>
+    </div>
+    
+</section>
+<!--world famous book publishers-->
+<section>
+ 
+    <h1>Some Famous Book Providers From all over the World</h1>
+    
+    <table id="customers">
+      <tr>
+        <th>Company</th>
+        <th>Founded</th>
+        <th>Headquaters</th>
+      </tr>
+      <tr>
+        <td>Pearson</td>
+        <td>1844</td>
+        <td>London,England,UK</td>
+      </tr>
+      <tr>
+        <td>Thomson Reuters</td>
+        <td>2008</td>
+        <td>Toronto,Ontario,Canada</td>
+      </tr>
+      <tr>
+        <td>RELX</td>
+        <td>1993</td>
+        <td>London,England,UK</td>
+      </tr>
+      <tr>
+        <td>Hachette Livre</td>
+        <td>1826</td>
+        <td>Paris,France</td>
+      </tr>
+      <tr>
+        <td>Harper Collins</td>
+        <td>1989</td>
+        <td>New York,USA</td>
+      </tr>
+      <tr>
+        <td>Bertelsmann</td>
+        <td>1835</td>
+        <td>Gutersloh,Germany</td>
+      </tr>
+      
+    </table>
+    
+</section>
+<!--contactusform-->
+<section>
+    <div class="containnn" id="con">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="KK.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">India</option>
+              <option value="australia">Germany</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <a href="nav.html"><input type="button" value="Submit" onclick="alert('Thank you for contacting us')"></a>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+<section>
+  <footer style="background-color: black; color: white;text-align: center;">
+    THANK YOU FOR VISITING ARE PAGE
+  </footer>
+</section>
+</body>
+</html>
